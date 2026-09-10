@@ -16,7 +16,8 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-page="homepage">
+    <a class="skip-link" href="#main-content">Terus ke kandungan utama</a>
     <header class="site-header">
       <a class="wordmark" href="#top" aria-label="CURVA MY home">CURVA <span>MY</span></a>
       <nav aria-label="Main navigation">
@@ -24,27 +25,30 @@
         <a href="#payet-collection">Koleksi Payet</a>
         <a href="#size-guide">Saiz</a>
         <a href="#custom">Custom Studio</a>
+        <a href="baju-kurung-plus-size/">Kurung Plus Size</a>
       </nav>
-      <a class="bag-link" href="#spark">Pick Your Spark <span aria-hidden="true">↗</span></a>
+      <a class="bag-link wa-link" href="https://wa.me/6285860070439" data-wa-intent="Konsultasi umum dari header">Tanya CURVA <span aria-hidden="true">↗</span></a>
     </header>
 
-    <main id="top">
+    <main id="main-content">
+      <span id="top"></span>
       <section class="hero" aria-labelledby="hero-title">
         <img
           class="hero-image"
           src="assets/curva-wedding-hero.webp"
           alt="Model wanita berkurva memakai baju kurung teal berhias payet di majlis perkahwinan luar"
         />
+        <span class="hero-render-label">Concept render · sampel fizikal belum disahkan</span>
         <div class="hero-shade"></div>
         <div class="hero-copy">
           <p class="eyebrow">Indonesian-inspired · Malaysian curve fit</p>
           <h1 id="hero-title">Made to arrive <em>beautifully.</em></h1>
           <p class="hero-text">
-            Kurung moden yang memberi ruang pada lengan, dada dan pinggul—kemudian kamu tentukan sendiri
-            seberapa berani kilauannya.
+            Kurung moden yang dibangunkan dengan fokus pada ruang lengan, dada dan pinggul—kemudian anda
+            tentukan sendiri seberapa berani kilauannya.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#collection">Shop the kurung</a>
+            <a class="button button-primary" href="#collection">Lihat konsep kurung</a>
             <a class="button button-ghost" href="#spark">Pilih payet</a>
           </div>
         </div>
@@ -54,9 +58,16 @@
         </div>
       </section>
 
+      <section class="trust-ribbon" aria-label="Maklumat pembelian ringkas">
+        <div><span>01</span><strong>XXL–4XL</strong><small>Saiz ready yang dirancang</small></div>
+        <div><span>02</span><strong>5XL+ Custom</strong><small>Konsultasi ukuran melalui WhatsApp</small></div>
+        <div><span>03</span><strong>Malaysia</strong><small>Butiran penghantaran perlu disahkan</small></div>
+        <div><span>04</span><strong>Human support</strong><small>Tanya sebelum membuat keputusan</small></div>
+      </section>
+
       <section class="manifesto" aria-label="Brand statement">
         <p>KURUNG UNTUK SETIAP LEKUK</p>
-        <h2>Kamu datang sebagai tetamu.<br /><span>Pulang sebagai cerita.</span></h2>
+        <h2>Anda datang sebagai tetamu.<br /><span>Pulang sebagai cerita.</span></h2>
       </section>
 
       <section class="collection section" id="collection" aria-labelledby="collection-title">
@@ -74,8 +85,9 @@
         <div class="product-stage">
           <img
             src="assets/nusantara-curve-lineup.webp"
-            alt="Empat model berkurva memperagakan koleksi baju kurung Nusantara Curve"
+            alt="Concept render empat model berkurva memperagakan koleksi baju kurung Nusantara Curve"
           />
+          <span class="stage-render-label">Concept render · rujukan arah koleksi</span>
           <div class="product-caption">
             <p>Full curve spectrum</p>
             <strong>XXL—4XL Ready · 5XL+ Custom</strong>
@@ -84,22 +96,22 @@
 
         <div class="product-grid">
           <article>
-            <p class="product-number">01</p>
+            <p class="product-number">KONSEP 01</p>
             <h3>Aruna Batik</h3>
-            <p>Kurung Kedah, nursing access, wudhu sleeves.</p>
-            <strong>RM129</strong>
+            <p>Konsep Kurung Kedah. Bahan, fungsi dan harga sedang menunggu pengesahan sampel.</p>
+            <a class="text-link wa-link" href="https://wa.me/6285860070439" data-wa-intent="Tanya konsep Aruna Batik">Tanya konsep ini ↗</a>
           </article>
           <article>
-            <p class="product-number">02</p>
+            <p class="product-number">KONSEP 02</p>
             <h3>Sari Draped</h3>
-            <p>Adjustable drape untuk tummy coverage.</p>
-            <strong>RM149</strong>
+            <p>Konsep kurung dengan drape boleh laras. Bahan, fungsi dan harga perlu disahkan.</p>
+            <a class="text-link wa-link" href="https://wa.me/6285860070439" data-wa-intent="Tanya konsep Sari Draped">Tanya konsep ini ↗</a>
           </article>
           <article>
-            <p class="product-number">03</p>
+            <p class="product-number">KONSEP 03</p>
             <h3>Ratih Kebarung</h3>
-            <p>Full-bust tailoring dan tonal embroidery.</p>
-            <strong>RM199</strong>
+            <p>Konsep kebarung dengan fokus ruang dada. Bahan, sulaman dan harga perlu disahkan.</p>
+            <a class="text-link wa-link" href="https://wa.me/6285860070439" data-wa-intent="Tanya konsep Ratih Kebarung">Tanya konsep ini ↗</a>
           </article>
         </div>
       </section>
@@ -115,7 +127,7 @@
               Motif payet eksperimental dengan alur vertikal dan asimetri yang memberi focal point pada tubuh
               curve. Pilih versi ready atau bincangkan warna, kepadatan dan placement custom melalui WhatsApp.
             </p>
-            <small class="concept-note">Gambar di bawah ialah concept render. Hasil akhir mengikuti sampel bahan dan persetujuan customer.</small>
+            <small class="concept-note">Gambar di bawah ialah concept render. Hasil akhir mengikuti sampel bahan dan persetujuan pelanggan.</small>
           </div>
         </div>
 
@@ -129,8 +141,8 @@
               <p class="product-number">PAYET 01</p>
               <h3>Rafflesia Orbit</h3>
               <p>Ledakan bunga abstrak dari bahu ke pinggul. Aneh, organik, dan susah dilupakan.</p>
-              <div class="payet-meta"><strong>+RM49</strong><span>Statement density</span></div>
-              <button class="button product-pick" type="button" data-pick="Rafflesia Orbit" data-price="49">Pilih motif ini</button>
+              <div class="payet-meta"><strong>Harga perlu disahkan</strong><span>Statement density</span></div>
+              <button class="button product-pick" type="button" data-pick="Rafflesia Orbit">Pilih motif ini</button>
             </div>
           </article>
 
@@ -143,8 +155,8 @@
               <p class="product-number">PAYET 02</p>
               <h3>Songket Circuit</h3>
               <p>Geometri songket yang terasa seperti circuit board. Dua garis panjang membantu efek visual lebih tinggi.</p>
-              <div class="payet-meta"><strong>+RM59</strong><span>Experimental density</span></div>
-              <button class="button product-pick" type="button" data-pick="Songket Circuit" data-price="59">Pilih motif ini</button>
+              <div class="payet-meta"><strong>Harga perlu disahkan</strong><span>Experimental density</span></div>
+              <button class="button product-pick" type="button" data-pick="Songket Circuit">Pilih motif ini</button>
             </div>
           </article>
 
@@ -157,8 +169,8 @@
               <p class="product-number">PAYET 03</p>
               <h3>Kunang-Kunang Rain</h3>
               <p>Jejak cahaya tropis yang jatuh tidak beraturan. Playful, lebih ringan, tetap unmistakably CURVA.</p>
-              <div class="payet-meta"><strong>+RM39</strong><span>Light density</span></div>
-              <button class="button product-pick" type="button" data-pick="Kunang-Kunang Rain" data-price="39">Pilih motif ini</button>
+              <div class="payet-meta"><strong>Harga perlu disahkan</strong><span>Light density</span></div>
+              <button class="button product-pick" type="button" data-pick="Kunang-Kunang Rain">Pilih motif ini</button>
             </div>
           </article>
         </div>
@@ -177,34 +189,34 @@
         <div class="spark-builder">
           <div class="builder-topline">
             <p>Aruna Deep Teal</p>
-            <span>Base RM129</span>
+            <span>Concept enquiry</span>
           </div>
           <div class="spark-options" role="radiogroup" aria-label="Pilih variasi payet">
-            <button class="spark-option" type="button" role="radio" aria-checked="false" data-name="Bare Mode" data-price="0">
+            <button class="spark-option" type="button" role="radio" aria-checked="false" data-name="Bare Mode">
               <span class="spark-swatch bare"></span>
-              <span><strong>Bare Mode</strong><small>Clean energy · +RM0</small></span>
+              <span><strong>Bare Mode</strong><small>Clean energy · harga perlu disahkan</small></span>
             </button>
-            <button class="spark-option selected" type="button" role="radio" aria-checked="true" data-name="Rafflesia Orbit" data-price="49">
+            <button class="spark-option selected" type="button" role="radio" aria-checked="true" data-name="Rafflesia Orbit">
               <span class="spark-swatch orbit"></span>
-              <span><strong>Rafflesia Orbit</strong><small>Organic statement · +RM49</small></span>
+              <span><strong>Rafflesia Orbit</strong><small>Organic statement · harga perlu disahkan</small></span>
             </button>
-            <button class="spark-option" type="button" role="radio" aria-checked="false" data-name="Songket Circuit" data-price="59">
+            <button class="spark-option" type="button" role="radio" aria-checked="false" data-name="Songket Circuit">
               <span class="spark-swatch meteor"></span>
-              <span><strong>Songket Circuit</strong><small>Geometric oddity · +RM59</small></span>
+              <span><strong>Songket Circuit</strong><small>Geometric oddity · harga perlu disahkan</small></span>
             </button>
-            <button class="spark-option" type="button" role="radio" aria-checked="false" data-name="Kunang-Kunang Rain" data-price="39">
+            <button class="spark-option" type="button" role="radio" aria-checked="false" data-name="Kunang-Kunang Rain">
               <span class="spark-swatch glitch"></span>
-              <span><strong>Kunang-Kunang Rain</strong><small>Tropical fall · +RM39</small></span>
+              <span><strong>Kunang-Kunang Rain</strong><small>Tropical fall · harga perlu disahkan</small></span>
             </button>
           </div>
           <div class="builder-total" aria-live="polite">
             <div>
-              <small>Your combination</small>
+              <small>Pilihan anda</small>
               <p>Aruna + <span id="selected-spark">Rafflesia Orbit</span></p>
             </div>
-            <strong id="total-price">RM158</strong>
+            <strong id="selection-status">Semak melalui WhatsApp</strong>
           </div>
-          <a class="button button-coral" id="whatsapp-order" href="#" target="_blank" rel="noreferrer">
+          <a class="button button-coral" id="whatsapp-order" href="https://wa.me/6285860070439" target="_blank" rel="noreferrer">
             Order melalui WhatsApp <span aria-hidden="true">↗</span>
           </a>
         </div>
@@ -217,25 +229,26 @@
             <h2 id="size-title">Ukur badan.<br />Bukan tebak label.</h2>
           </div>
           <p>
-            <strong>LD</strong> ialah lilit dada pakaian, bukan ukuran badan. Untuk jatuhan selesa, pilih LD pakaian
-            sekitar 6–10 cm lebih besar daripada lilit dada badan.
+            <strong>LD</strong> ialah lilit dada pakaian. Ruang tambahan yang sesuai bergantung pada potongan dan
+            fabrik, jadi cadangan fit akan disahkan selepas sampel fizikal tersedia.
           </p>
         </div>
 
         <div class="size-table-wrap">
           <table>
             <thead>
-              <tr><th>Saiz</th><th>Status</th><th>Cadangan dada badan</th><th>LD pakaian</th><th>Pinggang</th><th>Pinggul</th><th>Lengan atas</th><th>Panjang lengan</th><th>Panjang atasan</th></tr>
+              <tr><th>Saiz</th><th>Status</th><th>LD pakaian</th><th>Pinggang</th><th>Pinggul</th><th>Lengan atas</th><th>Panjang lengan</th><th>Panjang atasan</th></tr>
             </thead>
             <tbody>
-              <tr><th>XXL</th><td><span class="status-ready">Ready</span></td><td>104–110 cm</td><td>116 cm</td><td>112 cm</td><td>126 cm</td><td>42 cm</td><td>58 cm</td><td>82 cm</td></tr>
-              <tr><th>3XL</th><td><span class="status-ready">Ready</span></td><td>112–118 cm</td><td>124 cm</td><td>120 cm</td><td>134 cm</td><td>45 cm</td><td>59 cm</td><td>84 cm</td></tr>
-              <tr><th>4XL</th><td><span class="status-ready">Ready</span></td><td>120–126 cm</td><td>132 cm</td><td>128 cm</td><td>142 cm</td><td>48 cm</td><td>60 cm</td><td>86 cm</td></tr>
-              <tr class="custom-row"><th>5XL+</th><td><span class="status-custom">Custom</span></td><td colspan="7">Ikut ukuran badan · konsultasi melalui WhatsApp</td></tr>
+              <tr><th>XXL</th><td><span class="status-ready">Ready</span></td><td colspan="6">Ukuran cm perlu pengesahan sampel</td></tr>
+              <tr><th>3XL</th><td><span class="status-ready">Ready</span></td><td colspan="6">Ukuran cm perlu pengesahan sampel</td></tr>
+              <tr><th>4XL</th><td><span class="status-ready">Ready</span></td><td colspan="6">Ukuran cm perlu pengesahan sampel</td></tr>
+              <tr class="custom-row"><th>5XL+</th><td><span class="status-custom">Custom</span></td><td colspan="6">Ikut ukuran badan · konsultasi melalui WhatsApp</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="measurement-note"><strong>Nota penting:</strong> ukuran ini ialah draft ukuran pakaian dan perlu disahkan semula selepas sampel fizikal pertama. Toleransi jahitan ±2 cm.</p>
+        <p class="measurement-note"><strong>Maklumat diperlukan:</strong> masukkan ukuran pakaian sebenar selepas sampel fizikal diukur. Sehingga itu, customer boleh mendapatkan panduan saiz melalui WhatsApp.</p>
+        <a class="button inline-wa wa-link" href="https://wa.me/6285860070439" data-wa-intent="Konsultasi saiz">Konsultasi saiz melalui WhatsApp ↗</a>
       </section>
 
       <section class="custom-section" id="custom" aria-labelledby="custom-title">
@@ -244,7 +257,7 @@
           <p class="eyebrow">CURVA Custom Studio</p>
           <h2 id="custom-title">Tubuhmu tidak perlu<br />ikut pola kami.</h2>
           <p>Mulakan dari ukuran, motif payet, atau model yang ada di kepala kamu. Kami bincangkan kemungkinan, bahan, harga dan masa pengerjaan melalui WhatsApp.</p>
-          <a class="button button-coral wa-custom" href="#" target="_blank" rel="noreferrer">Konsultasi custom via WhatsApp ↗</a>
+          <a class="button button-coral wa-custom wa-link" href="https://wa.me/6285860070439" data-wa-intent="Konsultasi custom ukuran, payet atau model" target="_blank" rel="noreferrer">Konsultasi custom via WhatsApp ↗</a>
         </div>
         <div class="custom-options">
           <article><span>01</span><h3>Custom Ukuran</h3><p>Untuk 5XL+ atau proporsi badan yang memerlukan pola khas.</p></article>
@@ -255,22 +268,79 @@
 
       <section class="fit-section section" id="fit" aria-labelledby="fit-title">
         <div class="fit-copy">
-          <p class="eyebrow dark">Curve proof</p>
-          <h2 id="fit-title">Ruang yang tepat.<br />Bukan kain berlebihan.</h2>
+          <p class="eyebrow dark">Keutamaan pola curve</p>
+          <h2 id="fit-title">Ruang yang tepat.<br />Jatuhan yang difikirkan.</h2>
         </div>
         <div class="fit-points">
-          <article><span>01</span><h3>Full-bust shaping</h3><p>Ruang dada tanpa menarik bahagian belakang.</p></article>
-          <article><span>02</span><h3>Upper-arm ease</h3><p>Lengan tetap selesa ketika bergerak dan duduk.</p></article>
-          <article><span>03</span><h3>Tummy balance</h3><p>Bahagian depan sedikit panjang untuk jatuhan yang kemas.</p></article>
+          <article><span>01</span><h3>Full-bust shaping</h3><p>Ruang dada menjadi fokus semasa pola dan fitting sampel dibangunkan.</p></article>
+          <article><span>02</span><h3>Upper-arm ease</h3><p>Ruang lengan atas dinilai untuk pergerakan dan posisi duduk.</p></article>
+          <article><span>03</span><h3>Tummy balance</h3><p>Keseimbangan panjang depan akan disahkan melalui fitting sampel.</p></article>
         </div>
+      </section>
+
+      <section class="trust-section section" id="trust" aria-labelledby="trust-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow dark">Sebelum anda order</p>
+            <h2 id="trust-title">Jelas dahulu.<br />Baru yakin.</h2>
+          </div>
+          <p>CURVA masih dalam fasa melengkapkan sampel dan operasi. Maklumat yang belum disahkan ditunjukkan secara terbuka supaya keputusan pembelian tidak dibina atas andaian.</p>
+        </div>
+        <div class="trust-grid">
+          <article><span aria-hidden="true">⌁</span><h3>Konsultasi saiz</h3><p>XXL–4XL dirancang sebagai ready size. Panduan ukuran sebenar menunggu pengesahan sampel.</p><a class="text-link wa-link" href="https://wa.me/6285860070439" data-wa-intent="Konsultasi saiz">Tanya saiz ↗</a></article>
+          <article><span aria-hidden="true">✦</span><h3>Custom studio</h3><p>5XL+, ukuran khas, payet dan model custom dibincangkan melalui WhatsApp sebelum quote.</p><a class="text-link wa-link" href="https://wa.me/6285860070439" data-wa-intent="Konsultasi custom">Tanya custom ↗</a></article>
+          <article><span aria-hidden="true">◌</span><h3>Penghantaran Malaysia</h3><p>Courier, liputan, kadar dan anggaran tempoh penghantaran masih memerlukan keputusan operasi.</p><small>Information required</small></article>
+          <article><span aria-hidden="true">◇</span><h3>Pembayaran</h3><p>Kaedah pembayaran dan proses pengesahan bayaran belum diputuskan untuk paparan awam.</p><small>Information required</small></article>
+        </div>
+      </section>
+
+      <section class="proof-section section" id="reviews" aria-labelledby="reviews-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow dark">Customer proof · coming honestly</p>
+            <h2 id="reviews-title">Ruang untuk suara<br />customer sebenar.</h2>
+          </div>
+          <p>Ulasan akan diterbitkan selepas order sebenar, dengan izin customer. Tiada review rekaan untuk mengejar conversion shortcut.</p>
+        </div>
+        <div class="proof-grid" aria-label="Placeholder bukti pelanggan">
+          <article><span>PLACEHOLDER 01</span><div class="proof-line"></div><p>Foto customer atau unboxing sebenar akan ditempatkan di sini.</p></article>
+          <article><span>PLACEHOLDER 02</span><div class="proof-line short"></div><p>Ulasan tentang fitting dan pengalaman konsultasi akan ditempatkan di sini.</p></article>
+          <article><span>PLACEHOLDER 03</span><div class="proof-line"></div><p>Bukti penghantaran atau repeat order sebenar akan ditempatkan di sini.</p></article>
+        </div>
+      </section>
+
+      <section class="faq-section section" id="faq" aria-labelledby="faq-title">
+        <div class="faq-heading">
+          <p class="eyebrow dark">FAQ sebelum chat</p>
+          <h2 id="faq-title">Soalan yang patut<br />ditanya dulu.</h2>
+        </div>
+        <div class="faq-list">
+          <details><summary>Saiz apa yang tersedia?</summary><p>XXL, 3XL dan 4XL dirancang sebagai ready size. Ukuran cm setiap saiz perlu disahkan selepas sampel fizikal tersedia.</p></details>
+          <details><summary>Boleh tempah saiz melebihi 4XL?</summary><p>Boleh dibincangkan melalui WhatsApp sebagai tempahan custom berdasarkan ukuran badan.</p></details>
+          <details><summary>Boleh custom payet atau model?</summary><p>Boleh dikonsultasikan. Warna, placement, bahan, feasibility, harga dan tempoh pengerjaan akan disahkan sebelum order.</p></details>
+          <details><summary>Berapa lama tempahan custom disiapkan?</summary><p><strong>Information required:</strong> production lead time belum diberikan.</p></details>
+          <details><summary>Adakah penghantaran tersedia ke seluruh Malaysia?</summary><p><strong>Information required:</strong> courier, coverage, kadar, Sabah/Sarawak dan anggaran penghantaran belum disahkan.</p></details>
+          <details><summary>Bagaimana kaedah pembayaran?</summary><p><strong>Information required:</strong> payment method dan proses pengesahan belum diputuskan untuk website.</p></details>
+          <details><summary>Boleh tukar saiz atau pulangkan produk?</summary><p><strong>Information required:</strong> polisi pertukaran, pemulangan dan syarat produk custom belum tersedia.</p></details>
+          <details><summary>Adakah warna dan payet sama seperti gambar?</summary><p>Semua imej semasa ditandai sebagai concept render. Warna, bahan dan detail produk akhir perlu disahkan melalui foto sampel sebenar sebelum pembelian.</p></details>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="final-cta-title">
+        <p class="eyebrow">Belum pasti saiz atau motif?</p>
+        <h2 id="final-cta-title">Mulakan dengan satu chat.</h2>
+        <p>Beritahu ukuran badan, acara dan gaya yang anda bayangkan. CURVA akan bantu semak maklumat yang tersedia.</p>
+        <a class="button button-coral wa-link" href="https://wa.me/6285860070439" data-wa-intent="Konsultasi sebelum order dari CTA akhir">Chat CURVA di WhatsApp ↗</a>
       </section>
     </main>
 
     <footer>
       <a class="wordmark footer-mark" href="#top">CURVA <span>MY</span></a>
       <p>Indonesian-inspired kurung, made for Malaysian curves.</p>
-      <small>© <span id="year"></span> CURVA MY</small>
+      <small><a href="baju-kurung-plus-size/">Baju Kurung Plus Size</a> · © <span id="year"></span> CURVA MY</small>
     </footer>
+
+    <a class="mobile-wa wa-link" href="https://wa.me/6285860070439" data-wa-intent="Sticky mobile WhatsApp" aria-label="Chat CURVA melalui WhatsApp">Chat WhatsApp <span aria-hidden="true">↗</span></a>
 
     <script src="script.js"></script>
   </body>
