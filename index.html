@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CURVA MY — Indonesian-inspired baju kurung, direka khas untuk wanita berkurva Malaysia."
+    />
+    <title>CURVA MY — Kurung untuk setiap lekuk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="CURVA MY home">CURVA <span>MY</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#collection">Koleksi</a>
+        <a href="#spark">Payet</a>
+        <a href="#fit">Curve Fit</a>
+      </nav>
+      <a class="bag-link" href="#spark">Pick Your Spark <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/curva-wedding-hero.png"
+          alt="Model wanita berkurva memakai baju kurung teal berhias payet di majlis perkahwinan luar"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Indonesian-inspired · Malaysian curve fit</p>
+          <h1 id="hero-title">Made to arrive <em>beautifully.</em></h1>
+          <p class="hero-text">
+            Kurung moden yang memberi ruang pada lengan, dada dan pinggul—kemudian kamu tentukan sendiri
+            seberapa berani kilauannya.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#collection">Shop the kurung</a>
+            <a class="button button-ghost" href="#spark">Pilih payet</a>
+          </div>
+        </div>
+        <div class="hero-note" aria-hidden="true">
+          <span>01</span>
+          <p>Orbit Payet<br />Deep Teal</p>
+        </div>
+      </section>
+
+      <section class="manifesto" aria-label="Brand statement">
+        <p>KURUNG UNTUK SETIAP LEKUK</p>
+        <h2>Kamu datang sebagai tetamu.<br /><span>Pulang sebagai cerita.</span></h2>
+      </section>
+
+      <section class="collection section" id="collection" aria-labelledby="collection-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow dark">Nusantara Curve · Drop 01</p>
+            <h2 id="collection-title">Tiga kurung.<br />Tiga energy.</h2>
+          </div>
+          <p>
+            Familiar untuk majlis Malaysia, diberi sentuhan struktur dan detail Indonesia. Semua pola bermula
+            dari tubuh curve—bukan pola kecil yang sekadar dibesarkan.
+          </p>
+        </div>
+
+        <div class="product-stage">
+          <img
+            src="assets/nusantara-curve-lineup.png"
+            alt="Empat model berkurva memperagakan koleksi baju kurung Nusantara Curve"
+          />
+          <div class="product-caption">
+            <p>Full curve spectrum</p>
+            <strong>2XL—6XL</strong>
+          </div>
+        </div>
+
+        <div class="product-grid">
+          <article>
+            <p class="product-number">01</p>
+            <h3>Aruna Batik</h3>
+            <p>Kurung Kedah, nursing access, wudhu sleeves.</p>
+            <strong>RM129</strong>
+          </article>
+          <article>
+            <p class="product-number">02</p>
+            <h3>Sari Draped</h3>
+            <p>Adjustable drape untuk tummy coverage.</p>
+            <strong>RM149</strong>
+          </article>
+          <article>
+            <p class="product-number">03</p>
+            <h3>Ratih Kebarung</h3>
+            <p>Full-bust tailoring dan tonal embroidery.</p>
+            <strong>RM199</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="spark-section" id="spark" aria-labelledby="spark-title">
+        <div class="spark-intro">
+          <p class="eyebrow">Pick your spark</p>
+          <h2 id="spark-title">Same kurung.<br /><em>Different mood.</em></h2>
+          <p>
+            Payet modular dipasang melalui hidden loops. Tukar gaya tanpa membeli kurung baru dan simpan setiap
+            set seperti jewellery.
+          </p>
+        </div>
+
+        <div class="spark-builder">
+          <div class="builder-topline">
+            <p>Aruna Deep Teal</p>
+            <span>Base RM129</span>
+          </div>
+          <div class="spark-options" role="radiogroup" aria-label="Pilih variasi payet">
+            <button class="spark-option" type="button" role="radio" aria-checked="false" data-name="Bare Mode" data-price="0">
+              <span class="spark-swatch bare"></span>
+              <span><strong>Bare Mode</strong><small>Clean energy · +RM0</small></span>
+            </button>
+            <button class="spark-option selected" type="button" role="radio" aria-checked="true" data-name="Orbit" data-price="29">
+              <span class="spark-swatch orbit"></span>
+              <span><strong>Orbit</strong><small>Asymmetric · +RM29</small></span>
+            </button>
+            <button class="spark-option" type="button" role="radio" aria-checked="false" data-name="Meteor" data-price="39">
+              <span class="spark-swatch meteor"></span>
+              <span><strong>Meteor</strong><small>Random fall · +RM39</small></span>
+            </button>
+            <button class="spark-option" type="button" role="radio" aria-checked="false" data-name="Batik Glitch" data-price="49">
+              <span class="spark-swatch glitch"></span>
+              <span><strong>Batik Glitch</strong><small>Nusantara digital · +RM49</small></span>
+            </button>
+          </div>
+          <div class="builder-total" aria-live="polite">
+            <div>
+              <small>Your combination</small>
+              <p>Aruna + <span id="selected-spark">Orbit</span></p>
+            </div>
+            <strong id="total-price">RM158</strong>
+          </div>
+          <a class="button button-coral" id="whatsapp-order" href="#" target="_blank" rel="noreferrer">
+            Order melalui WhatsApp <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="fit-section section" id="fit" aria-labelledby="fit-title">
+        <div class="fit-copy">
+          <p class="eyebrow dark">Curve proof</p>
+          <h2 id="fit-title">Ruang yang tepat.<br />Bukan kain berlebihan.</h2>
+        </div>
+        <div class="fit-points">
+          <article><span>01</span><h3>Full-bust shaping</h3><p>Ruang dada tanpa menarik bahagian belakang.</p></article>
+          <article><span>02</span><h3>Upper-arm ease</h3><p>Lengan tetap selesa ketika bergerak dan duduk.</p></article>
+          <article><span>03</span><h3>Tummy balance</h3><p>Bahagian depan sedikit panjang untuk jatuhan yang kemas.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="wordmark footer-mark" href="#top">CURVA <span>MY</span></a>
+      <p>Indonesian-inspired kurung, made for Malaysian curves.</p>
+      <small>© <span id="year"></span> CURVA MY</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
