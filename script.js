@@ -1,7 +1,9 @@
 const WHATSAPP_NUMBER = "6285860070439";
+const BASE_PRICE = 159;
 
 const options = document.querySelectorAll(".spark-option");
 const selectedSpark = document.querySelector("#selected-spark");
+const totalPrice = document.querySelector("#total-price");
 const orderLink = document.querySelector("#whatsapp-order");
 const productPicks = document.querySelectorAll(".product-pick");
 const whatsappLinks = document.querySelectorAll(".wa-link");
@@ -45,10 +47,12 @@ whatsappLinks.forEach((link) => {
   link.addEventListener("click", () => trackWhatsAppClick(intent));
 });
 
-function updateOrder(name) {
+function updateOrder(name, addOnPrice = 0) {
+  const total = BASE_PRICE + addOnPrice;
   if (selectedSpark) selectedSpark.textContent = name;
+  if (totalPrice) totalPrice.textContent = `RM${total}`;
   if (orderLink) {
-    const intent = `bertanya tentang Aruna Deep Teal dengan motif payet ${name}`;
+    const intent = `bertanya tentang Aruna Deep Teal dengan motif payet ${name} (cadangan jumlah RM${total})`;
     orderLink.dataset.waIntent = intent;
     setWhatsAppHref(orderLink, intent);
   }
@@ -62,7 +66,7 @@ options.forEach((option) => {
     });
     option.classList.add("selected");
     option.setAttribute("aria-checked", "true");
-    updateOrder(option.dataset.name);
+    updateOrder(option.dataset.name, Number(option.dataset.price || 0));
   });
 });
 
@@ -77,7 +81,7 @@ productPicks.forEach((button) => {
 const year = document.querySelector("#year");
 if (year) year.textContent = new Date().getFullYear();
 if (orderLink) {
-  updateOrder("Rafflesia Orbit");
+  updateOrder("Rafflesia Orbit", 89);
   orderLink.addEventListener("click", () => {
     trackWhatsAppClick(orderLink.dataset.waIntent || "bertanya tentang pilihan payet");
   });
